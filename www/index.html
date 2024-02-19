@@ -6,6 +6,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
+        
         <title>Hello World</title>
           <!-- CSS  -->
         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -15,6 +16,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
@@ -29,124 +33,58 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
+  
+  <ul id="tabs-swipe-demo" class="tabs">
+    <li class="tab col s3"><a class="active" href="#test-swipe-1">Los Articulos</a></li>
+    <li class="tab col s3"><a href="#test-swipe-2">Contenido del Articulo</a></li>
+    <li class="tab col s3"><a href="#test-swipe-3">Starter Template</a></li>
+  </ul>
 
-    </div>
+  <div id="test-swipe-1" class="col s12 blue">
+    <ul id="article-list" class="collection"></ul>
+  </div>
+  <div id="test-swipe-2" class="col s12 red">
+    <div id="article-content"></div>
+  </div>
+  <div id="test-swipe-3" class="col s12 green">
+    Test 3
   </div>
 
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">add</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><span class="material-symbols-outlined">home</span></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><span class="material-symbols-outlined">check_circle</span></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><span class="material-symbols-outlined">star</span></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><span class="material-symbols-outlined">download</span></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><span class="material-symbols-outlined">bolt</span></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-  </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
+  <script>
+    $(document).ready(function() {
+        // Realizar una solicitud GET a la API
+        $.get("https://api.spaceflightnewsapi.net/v3/articles", function(data) {
+            // Obtener un arreglo de 10 índices aleatorios
+            var randomIndexes = generateRandomIndexes(data.length, 10);
+            
+            // Iterar sobre los índices aleatorios y mostrar los títulos correspondientes
+            $.each(randomIndexes, function(index, randomIndex) {
+                // Obtener el artículo correspondiente al índice aleatorio
+                var article = data[randomIndex];
+                // Crear un elemento <li> para cada título de noticia y agregarlo a la lista
+                $("#article-list").append("<li class='collection-item'>" + article.title + "</li>");
+            });
+        });
+    });
+    
+    // Función para generar 10 índices aleatorios
+    function generateRandomIndexes(max, count) {
+        var indexes = [];
+        while (indexes.length < count) {
+            var randomIndex = Math.floor(Math.random() * max);
+            if (indexes.indexOf(randomIndex) === -1) {
+                indexes.push(randomIndex);
+            }
+        }
+        return indexes;
+    }
+    </script>
+    
+    
 
   <!--  Scripts-->
   <script src="cordova.js"></script>
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>

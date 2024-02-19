@@ -12,3 +12,8 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.tabs-content {
+  height: 100%;
+  overflow-y: scroll !important;
+}
